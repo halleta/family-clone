@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download — Family</title>
+  <meta name="description" content="Family is the self-custody wallet that makes crypto feel effortless.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="loadbar"></div>
+
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Family home">
+        <svg class="brand-mark" viewBox="0 0 120 120" aria-hidden="true">
+          <path d="M60 12 C90 12 104 38 100 66 C96 94 78 106 60 106 C42 106 24 94 20 66 C16 38 30 12 60 12 Z" fill="#FFCF7B"/>
+          <circle cx="48" cy="58" r="6" fill="#1C1C1A"/>
+          <circle cx="72" cy="58" r="6" fill="#1C1C1A"/>
+          <path d="M50 74 Q60 83 70 74" stroke="#1C1C1A" stroke-width="4" fill="none" stroke-linecap="round"/>
+        </svg>
+        Family
+      </a>
+      <ul class="nav-links">
+        <li class="has-drop">
+          <button class="nav-link" aria-haspopup="true">Features
+            <span class="chev"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="drop">
+            <a class="drop-item" href="index.html#features">
+              <span class="drop-thumb" style="background:#D8ECFC">💼</span>
+              <span><h4>Wallet</h4><p>Your money, at home. Every coin, one calm place.</p></span>
+            </a>
+            <a class="drop-item" href="index.html#details">
+              <span class="drop-thumb" style="background:#DFF5E7">🔁</span>
+              <span><h4>Swap</h4><p>Trade thousands of tokens at the best price, in seconds.</p></span>
+            </a>
+            <a class="drop-item" href="index.html#details">
+              <span class="drop-thumb" style="background:#ECE4FD">🔐</span>
+              <span><h4>Backups</h4><p>Automatic encrypted backups. Lose your phone, keep your crypto.</p></span>
+            </a>
+          </div>
+        </li>
+        <li class="has-drop">
+          <button class="nav-link" aria-haspopup="true">Learn
+            <span class="chev"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="drop">
+            <a class="drop-item" href="blog.html">
+              <span class="drop-thumb" style="background:#FFF3D6">📝</span>
+              <span><h4>Blog</h4><p>Notes on crypto, design, and building Family.</p></span>
+            </a>
+            <a class="drop-item" href="changelog.html">
+              <span class="drop-thumb" style="background:#FFE8DC">🧾</span>
+              <span><h4>Changelog</h4><p>Every release, every improvement, in plain English.</p></span>
+            </a>
+            <a class="drop-item" href="docs.html">
+              <span class="drop-thumb" style="background:#ECE4FD">📚</span>
+              <span><h4>Docs</h4><p>Guides and references for getting the most out of Family.</p></span>
+            </a>
+          </div>
+        </li>
+        <li><a class="nav-link" href="faq.html">FAQs</a></li>
+        <li><a class="nav-link" href="support.html">Support</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="download.html" style="padding:12px 26px;font-size:15px">Download</a>
+        <button class="burger" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <div class="dl-hero band-white">
+    <div class="wrap">
+      <span class="eyebrow orange rv">Download</span>
+      <h1 class="rv" style="--rd:.05s">Your wallet is<br>one tap away.</h1>
+      <p class="lede rv" style="--rd:.1s;max-width:560px;margin:0 auto">Free forever. Set up in under a minute. Your keys never leave your device.</p>
+      <div class="platform-row rv" style="--rd:.15s">
+        <a class="plat-pill" href="download.html"><span class="os">🍎</span>Download for iOS</a>
+        <a class="plat-pill" href="download.html"><span class="os">🤖</span>Download for Android</a>
+      </div>
+      <div class="qr-card rv" style="--rd:.2s">
+        <div class="qr-fake">
+          <div class="qr-grid" id="qr"></div>
+          <p style="font-size:14px;color:var(--muted);font-weight:600">Scan with your phone camera<br>(design-study placeholder — not a real code)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="band-beige" style="padding-top:88px">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:48px">
+        <span class="eyebrow green rv">Why Family</span>
+        <h2 class="h2 rv" style="--rd:.05s">You'll wonder why all apps<br>aren't this nice.</h2>
+      </div>
+      <ul class="dl-bullets">
+        <li class="rv"><span class="check-dot" style="background:var(--green)">✓</span><span><b>Truly self-custody.</b> Only you hold the keys. We couldn't touch your funds if we wanted to.</span></li>
+        <li class="rv" style="--rd:.06s"><span class="check-dot" style="background:var(--blue)">✓</span><span><b>Private by default.</b> No tracking, no data brokers. Your money, your business.</span></li>
+        <li class="rv" style="--rd:.12s"><span class="check-dot" style="background:var(--purple)">✓</span><span><b>Backups on autopilot.</b> Encrypted, automatic, and there when you need them.</span></li>
+        <li class="rv" style="--rd:.18s"><span class="check-dot" style="background:var(--orange)">✓</span><span><b>Safe before you sign.</b> Every transaction simulated and screened for scams.</span></li>
+      </ul>
+      <div class="center rv" style="margin-top:56px">
+        <a class="btn btn-dark" href="download.html" style="font-size:18px;padding:18px 44px">Get Family free</a>
+        <p style="margin-top:16px;font-size:14px;color:var(--muted)">iOS 16+ · Android 10+ · Free forever</p>
+      </div>
+    </div>
+  </section>
+  <script>
+    // decorative QR-style placeholder (not a real code) — deterministic pattern
+    (function () {
+      var qr = document.getElementById("qr");
+      if (!qr) return;
+      var seed = 42;
+      function rnd() { seed = (seed * 16807) % 2147483647; return seed / 2147483647; }
+      function inFinder(r, c) {
+        return (r <= 2 && c <= 2) || (r <= 2 && c >= 6) || (r >= 6 && c <= 2);
+      }
+      function finderOn(r, c) {
+        var lr = r <= 2 ? r : r - 6, lc = c <= 2 ? c : c - 6;
+        return !(lr === 1 && lc === 1); // hollow center
+      }
+      for (var r = 0; r < 9; r++) {
+        for (var c = 0; c < 9; c++) {
+          var i = document.createElement("i");
+          var on = inFinder(r, c) ? finderOn(r, c) : rnd() > 0.52;
+          if (!on) i.className = "w";
+          qr.appendChild(i);
+        }
+      }
+    })();
+  </script>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <a class="brand" href="index.html">
+            <svg class="brand-mark" viewBox="0 0 120 120"><path d="M60 12 C90 12 104 38 100 66 C96 94 78 106 60 106 C42 106 24 94 20 66 C16 38 30 12 60 12 Z" fill="#FFCF7B"/><circle cx="48" cy="58" r="6" fill="#1C1C1A"/><circle cx="72" cy="58" r="6" fill="#1C1C1A"/><path d="M50 74 Q60 83 70 74" stroke="#1C1C1A" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+            Family
+          </a>
+          <p>The self-custody wallet that feels like home.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Product</h5>
+          <ul><li><a href="index.html#features">Features</a></li><li><a href="download.html">Download</a></li><li><a href="changelog.html">Changelog</a></li></ul>
+        </div>
+        <div class="foot-col">
+          <h5>Resources</h5>
+          <ul><li><a href="blog.html">Blog</a></li><li><a href="docs.html">Docs</a></li><li><a href="support.html">Support</a></li><li><a href="faq.html">FAQs</a></li></ul>
+        </div>
+        <div class="foot-col">
+          <h5>Legal</h5>
+          <ul><li><a href="legal.html">Privacy Policy</a></li><li><a href="legal.html">Terms of Service</a></li><li><a href="legal.html">Security</a></li></ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <p>© <span class="js-year">2026</span> Family — design study. Made with care.</p>
+        <p><a href="download.html">iOS</a> · <a href="download.html">Android</a></p>
+      </div>
+      <div class="disclaimer">Unofficial design-study clone. Not affiliated with Family. All copy, mascots, and animations are original recreations built for design research.</div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
