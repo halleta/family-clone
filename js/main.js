@@ -78,6 +78,7 @@
   document.querySelectorAll(".wallet-ui").forEach(function (wallet, wi) {
     var balEl = wallet.querySelector(".wallet-bal");
     var txList = wallet.querySelector(".tx-list");
+    if (!balEl || !txList) return; // static mock phone — no animation
     var TARGET = 24382.10;
     var txPool = [
       { n: "Maya Chen", s: "Received · ETH", amt: "+0.42 ETH", pos: true, bg: "#DFF5E7", e: "💸" },
@@ -148,6 +149,22 @@
       var q = sInput.value.trim().toLowerCase();
       artRows.forEach(function (r) {
         r.style.display = r.textContent.toLowerCase().indexOf(q) !== -1 ? "" : "none";
+      });
+    });
+  }
+
+  /* ---------- send / receive / swap tab switcher ---------- */
+  var tabs = document.querySelectorAll(".tab");
+  if (tabs.length) {
+    tabs.forEach(function (t) {
+      t.addEventListener("click", function () {
+        tabs.forEach(function (x) { x.classList.remove("on"); x.setAttribute("aria-selected", "false"); });
+        t.classList.add("on");
+        t.setAttribute("aria-selected", "true");
+        var key = t.getAttribute("data-tab");
+        document.querySelectorAll(".srs-phone").forEach(function (p) {
+          p.classList.toggle("on", p.getAttribute("data-phone") === key);
+        });
       });
     });
   }
